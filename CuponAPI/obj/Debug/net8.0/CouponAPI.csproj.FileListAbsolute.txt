@@ -137,3 +137,4 @@ C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CuponAPI\obj\Debug\
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CuponAPI\obj\Debug\net8.0\CouponAPI.pdb
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CuponAPI\obj\Debug\net8.0\CouponAPI.genruntimeconfig.cache
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CuponAPI\obj\Debug\net8.0\ref\CouponAPI.dll
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CuponAPI\obj\Debug\net8.0\CouponAPI.sourcelink.json

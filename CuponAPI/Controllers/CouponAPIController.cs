@@ -1,5 +1,4 @@
-﻿using CouponAPI.Models;
-using CouponAPI.Models.Dto;
+﻿using CouponAPI.Models.Dto;
 using CouponAPI.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,10 +18,9 @@ namespace CouponAPI.Controllers
         }
 
         [HttpGet]
-
         public async Task<ResponseDto> Get()
         {
-            IEnumerable<Coupon> cuponList;
+            IEnumerable<CouponDto> cuponList;
             try
             {
                 cuponList= await _couponRepository.GetCupons();
@@ -41,12 +39,85 @@ namespace CouponAPI.Controllers
         [Route("{id:int}")]
         public async Task<ResponseDto> Get(int id)
         {
-            Coupon cupon;
+            CouponDto cupon;
             try
             {
                 cupon = await _couponRepository.GetCuponById(id);
                 _responseDto.Result = cupon;
                 _responseDto.Message = "Coupon Got Sucessfully.";
+            }
+            catch (Exception ex)
+            {
+                _responseDto.IsSuccess = false;
+                _responseDto.Message = ex.Message;
+            }
+            return _responseDto;
+        }
+
+        [HttpGet]
+        [Route("GetByCode/{code}")]
+        public async Task<ResponseDto> GetByCode(string code)
+        {
+            CouponDto cupon;
+            try
+            {
+                cupon = await _couponRepository.GetCuponByCode(code);
+                _responseDto.Result = cupon;
+                _responseDto.Message = "Coupon Got Sucessfully.";
+            }
+            catch (Exception ex)
+            {
+                _responseDto.IsSuccess = false;
+                _responseDto.Message = ex.Message;
+            }
+            return _responseDto;
+        }
+
+
+        [HttpPost]
+        public async Task<ResponseDto> Post([FromBody] CouponDto couponDto)
+        {
+            CouponDto cupon;
+            try
+            {
+                cupon = await _couponRepository.CreateCoupon(couponDto);
+                _responseDto.Result = cupon;
+                _responseDto.Message = "Coupon Created Sucessfully.";
+            }
+            catch (Exception ex)
+            {
+                _responseDto.IsSuccess = false;
+                _responseDto.Message = ex.Message;
+            }
+            return _responseDto;
+        }
+
+        [HttpPut]
+        public async Task<ResponseDto> Put([FromBody] CouponDto couponDto)
+        {
+            CouponDto cupon;
+            try
+            {
+                cupon = await _couponRepository.UpdateCoupon(couponDto);
+                _responseDto.Result = cupon;
+                _responseDto.Message = "Coupon Updated Sucessfully.";
+            }
+            catch (Exception ex)
+            {
+                _responseDto.IsSuccess = false;
+                _responseDto.Message = ex.Message;
+            }
+            return _responseDto;
+        }
+
+        [HttpDelete]
+        public async Task<ResponseDto> Delete(int id)
+        {
+            CouponDto cupon;
+            try
+            {
+                await _couponRepository.DeleteCoupon(id);
+                _responseDto.Message = "Coupon Deleted Sucessfully.";
             }
             catch (Exception ex)
             {
