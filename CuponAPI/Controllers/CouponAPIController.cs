@@ -111,6 +111,7 @@ namespace CouponAPI.Controllers
         }
 
         [HttpDelete]
+        [Route("{id:int}")]
         public async Task<ResponseDto> Delete(int id)
         {
             CouponDto cupon;
