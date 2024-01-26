@@ -43,5 +43,18 @@ namespace AuthAPI.Controllers
             _responseDto.Result= logingResponse;
             return Ok(logingResponse);
         }
+
+        [HttpPost("assingRole")]
+        public async Task<IActionResult> AssingRole([FromBody] RegistrationRequestDto registrationRequestDto)
+        {
+            var isAssignRoleSuccess = await _authService.AssignRole(registrationRequestDto.Email,registrationRequestDto.Role.ToUpper());
+            if (!isAssignRoleSuccess)
+            {
+                _responseDto.IsSuccess = false;
+                _responseDto.Message = "Can Not assign Role to the User";
+                return BadRequest(_responseDto);
+            }
+            return Ok(_responseDto);
+        }
     }
 }
