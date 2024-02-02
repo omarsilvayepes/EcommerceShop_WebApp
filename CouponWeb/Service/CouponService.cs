@@ -1,7 +1,8 @@
 ﻿using CouponWeb.Models;
+using CouponWeb.Service.IService;
 using CouponWeb.Utility;
 
-namespace CouponWeb.Service.IService
+namespace CouponWeb.Service
 {
     public class CouponService : ICouponService
     {
@@ -16,7 +17,7 @@ namespace CouponWeb.Service.IService
             return await _baseService.SendAsync(new RequestDto
             {
                 ApiType = SD.ApiType.POST,
-                Data=couponDto,
+                Data = couponDto,
                 Url = SD.CouponAPIBase + "/api/CouponAPI"
             });
         }
@@ -34,8 +35,8 @@ namespace CouponWeb.Service.IService
         {
             return await _baseService.SendAsync(new RequestDto
             {
-                ApiType=SD.ApiType.GET,
-                Url=SD.CouponAPIBase+ "/api/CouponAPI"
+                ApiType = SD.ApiType.GET,
+                Url = SD.CouponAPIBase + "/api/CouponAPI"
             });
         }
 
@@ -44,7 +45,7 @@ namespace CouponWeb.Service.IService
             return await _baseService.SendAsync(new RequestDto
             {
                 ApiType = SD.ApiType.GET,
-                Url = SD.CouponAPIBase + "/api/CouponAPI/GetByCode/"+code
+                Url = SD.CouponAPIBase + "/api/CouponAPI/GetByCode/" + code
             });
         }
 

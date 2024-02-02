@@ -123,6 +123,7 @@ C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CuponAPI\obj\Debug\
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CuponAPI\obj\Debug\net8.0\CouponAPI.csproj.CoreCompileInputs.cache
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CuponAPI\obj\Debug\net8.0\CouponAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CuponAPI\obj\Debug\net8.0\CouponAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CuponAPI\obj\Debug\net8.0\CouponAPI.sourcelink.json
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CuponAPI\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CuponAPI\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CuponAPI\obj\Debug\net8.0\staticwebassets\msbuild.CouponAPI.Microsoft.AspNetCore.StaticWebAssets.props
@@ -137,4 +138,3 @@ C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CuponAPI\obj\Debug\
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CuponAPI\obj\Debug\net8.0\CouponAPI.pdb
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CuponAPI\obj\Debug\net8.0\CouponAPI.genruntimeconfig.cache
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CuponAPI\obj\Debug\net8.0\ref\CouponAPI.dll
-C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CuponAPI\obj\Debug\net8.0\CouponAPI.sourcelink.json
