@@ -32,3 +32,8 @@ C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CouponWeb\obj\Debug
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CouponWeb\obj\Debug\net8.0\CouponWeb.pdb
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CouponWeb\obj\Debug\net8.0\CouponWeb.genruntimeconfig.cache
 C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CouponWeb\obj\Debug\net8.0\ref\CouponWeb.dll
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CouponWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CouponWeb\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CouponWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CouponWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\CouponWeb\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

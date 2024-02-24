@@ -64,8 +64,13 @@ namespace CouponWeb.Service
                         return new() { IsSuccess = false, Message = "Internal Server Error" };
                     default:
                         var apiContent = await apiResponse.Content.ReadAsStringAsync();
-                        var apiResponseDto = JsonConvert.DeserializeObject<ResponseDto>(apiContent);
-                        return apiResponseDto;
+
+                        var dto = new ResponseDto
+                        {
+                            Message = apiContent,
+                            IsSuccess = true
+                        };
+                        return dto;
                 }
             }
             catch (Exception ex)

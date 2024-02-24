@@ -1,10 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "3ThUrrx4YyNYVKxJGL+xCNYjdL7RwD60L0gJLo1AtIG9mi61WtNb17PPfR38AEovY6gPjniWfm3fMOntp6uiKQ==",
+  "dgSpecHash": "eoUV7b9KgY/x3gMxBUSKoaUMxSZfCcoaOI+7qfB2ZUOM/w1/EgyC4ULRsUe+iHdl8F6yS0fg9Xw2YVnSU1fZgw==",
   "success": true,
   "projectFilePath": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\EcommerceShop\\CouponWeb\\CouponWeb.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\omary\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\omary\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.3.1\\microsoft.identitymodel.abstractions.7.3.1.nupkg.sha512",
+    "C:\\Users\\omary\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.3.1\\microsoft.identitymodel.jsonwebtokens.7.3.1.nupkg.sha512",
+    "C:\\Users\\omary\\.nuget\\packages\\microsoft.identitymodel.logging\\7.3.1\\microsoft.identitymodel.logging.7.3.1.nupkg.sha512",
+    "C:\\Users\\omary\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.3.1\\microsoft.identitymodel.tokens.7.3.1.nupkg.sha512",
+    "C:\\Users\\omary\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\omary\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.3.1\\system.identitymodel.tokens.jwt.7.3.1.nupkg.sha512"
   ],
   "logs": []
 }
