@@ -54,7 +54,9 @@ namespace AuthAPI.Service
                 return new (){ User=null, Token=string.Empty};
             }
 
-            var token = _JwtTokenGenerator.GenerateToken(userDB);
+            //if user was found generate Json web token
+            var roles=await _UserManager.GetRolesAsync(userDB);
+            var token = _JwtTokenGenerator.GenerateToken(userDB,roles);
 
             UserDto userDto = new()
             {

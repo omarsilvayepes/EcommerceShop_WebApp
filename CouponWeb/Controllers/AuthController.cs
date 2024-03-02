@@ -34,9 +34,11 @@ namespace CouponWeb.Controllers
         {
             ResponseDto result = await _authService.LoginAsync(loginRequestDto);
 
-            if (result != null && result.IsSuccess)
-            {
+            ResponseDto responseDto = JsonConvert
+                    .DeserializeObject<ResponseDto>(result.Message);
 
+            if (result.Message != null && responseDto.IsSuccess)
+            {
                 LoginResponseDto loginResponseDto = JsonConvert
                     .DeserializeObject<LoginResponseDto>(result.Message);
 
@@ -46,7 +48,8 @@ namespace CouponWeb.Controllers
             }
             else
             {
-                ModelState.AddModelError("CustomError",result.Message);
+                //ModelState.AddModelError("CustomError",result.Message);
+                TempData["error"] =responseDto.Message;
                 return View(loginRequestDto);
             }
         }
@@ -87,6 +90,10 @@ namespace CouponWeb.Controllers
                 }
 
             }
+            else
+            {
+                TempData["error"] = result.Message;
+            }
 
             var roleList = new List<SelectListItem>()
             {
@@ -125,7 +132,11 @@ namespace CouponWeb.Controllers
             identity.AddClaim(new Claim(ClaimTypes.Name,
                 jwt.Claims.FirstOrDefault(c => c.Type == JwtRegisteredClaimNames.Email).Value));
 
-            var principal=new ClaimsPrincipal(identity);
+            identity.AddClaim(new Claim(ClaimTypes.Role,
+                jwt.Claims.FirstOrDefault(c => c.Type == "role").Value));
+
+
+            var principal =new ClaimsPrincipal(identity);
 
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,principal);
 
