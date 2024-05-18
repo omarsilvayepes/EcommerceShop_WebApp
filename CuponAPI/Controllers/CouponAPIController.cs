@@ -77,6 +77,7 @@ namespace CouponAPI.Controllers
 
 
         [HttpPost]
+        [Authorize(Roles ="Admin")]
         public async Task<ResponseDto> Post([FromBody] CouponDto couponDto)
         {
             CouponDto cupon;
@@ -95,6 +96,7 @@ namespace CouponAPI.Controllers
         }
 
         [HttpPut]
+        [Authorize(Roles = "Admin")]
         public async Task<ResponseDto> Put([FromBody] CouponDto couponDto)
         {
             CouponDto cupon;
@@ -114,6 +116,7 @@ namespace CouponAPI.Controllers
 
         [HttpDelete]
         [Route("{id:int}")]
+        [Authorize(Roles = "Admin")]
         public async Task<ResponseDto> Delete(int id)
         {
             CouponDto cupon;
