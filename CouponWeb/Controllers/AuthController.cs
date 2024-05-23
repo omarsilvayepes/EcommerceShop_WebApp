@@ -63,7 +63,7 @@ namespace CouponWeb.Controllers
                 new SelectListItem{Text=SD.RoleCustomer,Value=SD.RoleCustomer}
             };
 
-            ViewBag.RoleList = roleList;
+            ViewBag.RoleList = roleList;// Pass the RoleList to the User view interface
             return View();
         }
 

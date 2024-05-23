@@ -52,7 +52,7 @@ namespace CouponWeb.Controllers
                     TempData["error"] = response?.Message;
                 }
             }
-            return View(couponDto);
+            return View("CouponCreate", couponDto);
         }
 
         public async Task<IActionResult> CouponDelete(int couponId) //For Render the View Coupon for Delete to the user 
@@ -86,7 +86,7 @@ namespace CouponWeb.Controllers
             {
                 TempData["error"] = response?.Message;
             }
-            return View(couponDto);
+            return View("CouponDelete", couponDto);
         }
     }
 }
