@@ -18,6 +18,40 @@ namespace ShoppingCartAPI.Controllers
             _responseDto = new ResponseDto();
         }
 
+        [HttpPost("ApplyCoupon")]
+        public async Task<ResponseDto> ApplyCoupon([FromBody]CartDto cartDto)
+        {
+            try
+            {
+                 await _cartRepository.ApplyCoupon(cartDto);
+                _responseDto.Message = "Cuopon Applied Sucessfully.";
+                _responseDto.Result = true;
+            }
+            catch (Exception ex)
+            {
+                _responseDto.IsSuccess = false;
+                _responseDto.Message = ex.Message;
+            }
+            return _responseDto;
+        }
+
+        [HttpPost("RemoveCoupon")]
+        public async Task<ResponseDto> RemoveCoupon([FromBody] CartDto cartDto)
+        {
+            try
+            {
+                await _cartRepository.RemoveCoupon(cartDto);
+                _responseDto.Message = "Cuopon Removed Sucessfully.";
+                _responseDto.Result = true;
+            }
+            catch (Exception ex)
+            {
+                _responseDto.IsSuccess = false;
+                _responseDto.Message = ex.Message;
+            }
+            return _responseDto;
+        }
+
         [HttpPost("CartUpsert")]
         public async Task<ResponseDto> CartUpsert(CartDto cartDto)
         {

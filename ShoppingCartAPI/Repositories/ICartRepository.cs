@@ -6,7 +6,8 @@ namespace ShoppingCartAPI.Repositories
     {
         Task<CartDto> CartUpsert(CartDto cartDto);
         Task RemoveCart(int CardetailsId);
-
+        Task ApplyCoupon(CartDto cartDto);
+        Task RemoveCoupon(CartDto cartDto);
         Task<CartDto> GetCart(string userId);
 
     }

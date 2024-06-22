@@ -13,13 +13,41 @@ namespace ShoppingCartAPI.Repositories
         private readonly AppDbContext _appDbContext;
         private readonly IMapper _mapper;
         private readonly IProductService _productService;
+        private readonly ICouponService _couponService;
 
-        public CartRepository(AppDbContext appDbContext, IMapper mapper, IProductService productService)
+        public CartRepository(AppDbContext appDbContext, 
+            IMapper mapper, 
+            IProductService productService,
+            ICouponService couponService
+            )
         {
             _productService = productService;
+            _couponService = couponService;
             _mapper = mapper;
             _appDbContext = appDbContext;
         }
+
+        public async Task ApplyCoupon(CartDto cartDto)
+        {
+            var cartHeaderRecord = await _appDbContext.cartHeaders
+               .FirstAsync(u => u.UserId == cartDto.CartHeader.UserId);
+
+            cartHeaderRecord.CouponCode = cartDto.CartHeader.CouponCode;
+            _appDbContext.Update(cartHeaderRecord);
+            await _appDbContext.SaveChangesAsync();
+        }
+
+
+        public async Task RemoveCoupon(CartDto cartDto)
+        {
+            var cartHeaderRecord = await _appDbContext.cartHeaders
+                .FirstAsync(u => u.UserId == cartDto.CartHeader.UserId);
+
+            cartHeaderRecord.CouponCode = "";
+            _appDbContext.Update(cartHeaderRecord);
+            await _appDbContext.SaveChangesAsync();
+        }
+
         public async Task<CartDto> CartUpsert(CartDto cartDto)
         {
             var cartHeaderRecord = await _appDbContext.cartHeaders.AsNoTracking()
@@ -89,6 +117,19 @@ namespace ShoppingCartAPI.Repositories
                 cartDto.CartHeader.CarTotal += (item.Count * item.Product.Price);
             }
 
+            //Apply Coupon if any
+
+            if (!string.IsNullOrEmpty(cartDto.CartHeader.CouponCode))
+            {
+                CouponDto coupon=await _couponService.GetCoupon(cartDto.CartHeader.CouponCode);
+
+                if(coupon is not null && cartDto.CartHeader.CarTotal>coupon.MinAmount)
+                {
+                    cartDto.CartHeader.CarTotal -= coupon.MinAmount;
+                    cartDto.CartHeader.Discount = coupon.DiscountAmount;
+                }
+            }
+
             return cartDto;
         }
 
@@ -115,5 +156,6 @@ namespace ShoppingCartAPI.Repositories
 
             await _appDbContext.SaveChangesAsync();
         }
+
     }
 }

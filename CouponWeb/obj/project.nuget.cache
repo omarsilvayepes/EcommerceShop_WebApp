@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "fikzmGLaw67GbreRejSwer+FdhVGYBxU494XiA2VGDoRFkE9GBVb3hHw+hBuUms014k6DHOXfBo3scayINPdaQ==",
+  "dgSpecHash": "JC10puEp70D4drgfid69jAjDK4xUblmFf6/N90EB1IpSLJ6CJCWveNehYXmnrgMh14bNHv29yIlwMm1zAYSxwA==",
   "success": true,
   "projectFilePath": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\EcommerceShop\\CouponWeb\\CouponWeb.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\omary\\.nuget\\packages\\identitymodel\\7.0.0\\identitymodel.7.0.0.nupkg.sha512",
     "C:\\Users\\omary\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.3.1\\microsoft.identitymodel.abstractions.7.3.1.nupkg.sha512",
     "C:\\Users\\omary\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.3.1\\microsoft.identitymodel.jsonwebtokens.7.3.1.nupkg.sha512",
     "C:\\Users\\omary\\.nuget\\packages\\microsoft.identitymodel.logging\\7.3.1\\microsoft.identitymodel.logging.7.3.1.nupkg.sha512",
