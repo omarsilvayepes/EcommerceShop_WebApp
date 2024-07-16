@@ -1,0 +1,13 @@
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\MessageBus\bin\Debug\net8.0\MessageBus.deps.json
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\MessageBus\bin\Debug\net8.0\MessageBus.dll
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\MessageBus\bin\Debug\net8.0\MessageBus.pdb
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\MessageBus\obj\Debug\net8.0\MessageBus.csproj.AssemblyReference.cache
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\MessageBus\obj\Debug\net8.0\MessageBus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\MessageBus\obj\Debug\net8.0\MessageBus.AssemblyInfoInputs.cache
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\MessageBus\obj\Debug\net8.0\MessageBus.AssemblyInfo.cs
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\MessageBus\obj\Debug\net8.0\MessageBus.csproj.CoreCompileInputs.cache
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\MessageBus\obj\Debug\net8.0\MessageBus.sourcelink.json
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\MessageBus\obj\Debug\net8.0\MessageBus.dll
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\MessageBus\obj\Debug\net8.0\refint\MessageBus.dll
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\MessageBus\obj\Debug\net8.0\MessageBus.pdb
+C:\Users\omary\OneDrive\Escritorio\LearningDEV\EcommerceShop\MessageBus\obj\Debug\net8.0\ref\MessageBus.dll

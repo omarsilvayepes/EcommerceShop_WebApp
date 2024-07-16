@@ -1,0 +1,247 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\EcommerceShop\\ShoppingCartAPI\\ShoppingCartAPI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\EcommerceShop\\CouponWeb\\CouponWeb.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\EcommerceShop\\CouponWeb\\CouponWeb.csproj",
+        "projectName": "CouponWeb",
+        "projectPath": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\EcommerceShop\\CouponWeb\\CouponWeb.csproj",
+        "packagesPath": "C:\\Users\\omary\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\EcommerceShop\\CouponWeb\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\omary\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\Saga_Design_Pattern\\NugetPackages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "IdentityModel": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\EcommerceShop\\MessageBus\\MessageBus.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\EcommerceShop\\MessageBus\\MessageBus.csproj",
+        "projectName": "MessageBus",
+        "projectPath": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\EcommerceShop\\MessageBus\\MessageBus.csproj",
+        "packagesPath": "C:\\Users\\omary\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\EcommerceShop\\MessageBus\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\omary\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\Saga_Design_Pattern\\NugetPackages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Azure.Messaging.ServiceBus": {
+              "target": "Package",
+              "version": "[7.17.5, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\EcommerceShop\\ShoppingCartAPI\\ShoppingCartAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\EcommerceShop\\ShoppingCartAPI\\ShoppingCartAPI.csproj",
+        "projectName": "ShoppingCartAPI",
+        "projectPath": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\EcommerceShop\\ShoppingCartAPI\\ShoppingCartAPI.csproj",
+        "packagesPath": "C:\\Users\\omary\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\EcommerceShop\\ShoppingCartAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\omary\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\Saga_Design_Pattern\\NugetPackages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\EcommerceShop\\CouponWeb\\CouponWeb.csproj": {
+                "projectPath": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\EcommerceShop\\CouponWeb\\CouponWeb.csproj"
+              },
+              "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\EcommerceShop\\MessageBus\\MessageBus.csproj": {
+                "projectPath": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\EcommerceShop\\MessageBus\\MessageBus.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
